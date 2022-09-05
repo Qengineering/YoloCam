@@ -17,7 +17,7 @@ You don't need to be able to program. However, the used C++ source code is avail
 Given the many hours of work, we ask you for a small one-time fee for the license.<br>
 See our [shop](https://qengineering.eu/shop.html) where we explain how the license works.<br><br> 
 ![output image]( https://qengineering.eu/images/YoloCamAdGitScreen.webp )
-> Red boxes indicate moving objects. Blue boxes are recognized stationary objects.
+> A red box is a recognized moving object. Blue boxes are recognized stationary objects.
 
 ------------
 
