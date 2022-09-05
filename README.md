@@ -33,10 +33,10 @@ To get the YoloCam working, you need the following hardware:
 There are two versions of the YoloCam software. You have to choose which one you want to use.<br><br>
 The _**GPIO**_ version. This version activates the GPIO output pins when a recognized object triggers an event.<br>
 There is no live feed to your browser. You can only watch the video on your monitor. Or via VNC, of course.<br>
-The GPIO outputs acts in real time. There is no 10-second latency.<br><br>
+The GPIO outputs acts in real time. There is no 10-second latency.<br>
+Finally, the GPIO version has a digital zoom of up to 5X.<br><br>
 The _**email**_ version. This version sends emails and records movies when a recognized object triggers an event.<br>
-There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming, because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream.<br>
-By the way, thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.
+There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming, because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream. By the way, thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.<br>The email version lacks the digital zoom function.
 #### Tip.<br>
 Start with the email version if this is your first time using YoloCam. You get a lot of inside information on how everything works, with a detailed email to help you tune your events. And for the price, you can't beat it.
 ![output image]( https://qengineering.eu/images/EmailExampleYoloCam2.png )
@@ -52,11 +52,14 @@ Select the desired version from the matrix below.
 | Raspberry Pi 3B+ | [image](https://ln5.sync.com/dl/51b691c20/4gb8n8pc-kqdr2529-szkaav4m-nx3jcchm) | soon |
 | Raspberry Pi Zero 2W | [image](https://ln5.sync.com/dl/61432a2d0/ukhr6gne-q9kyvsks-zb45yrmx-mxiu7pdx)  | soon |
 
+------------
+
+## Flashing.
 Once the file has been downloaded, you need to flash it to an SD card. Use a good quality SD with a minimum size of 16 GByte for this.<br>
-On the [Raspberry Pi website](https://www.raspberrypi.com/documentation/computers/getting-started.html), you can follow the instructions on how to flash an image.<br>
+On the [Raspberry Pi website](https://www.raspberrypi.com/documentation/computers/getting-started.html), you can follow the instructions on how to flash an image.<br><br>
 Obvious, don't select a standard OS, but the file you just downloaded. For instance' `YoloCam_Rpi4_email.xz`.<br><br>
 ![output image]( https://qengineering.eu/images/FlashShopRpi.webp )<br><br>
-Instead of the `Raspberry Pi Imager`, some people prefer `balenaEtcher`. It doesn't matter, they all do it perfectly.
+Instead of the [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager/imager_latest.exe), some people prefer [balenaEtcher](https://www.balena.io/etcher/). It doesn't matter, they all do a perfect job.
 
 ------------
 
