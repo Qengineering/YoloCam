@@ -101,7 +101,13 @@ The event can set or reset an output pin in the case of the GPIO version.<br>
 Either send you an email, or start a recording if you have the email version.<br>
 Now it is easy to make a video clip of your cat when you are not at home.<br>
 Or a burglar in your backyard, without your dog always setting off the alarm.<br>
-The WiKi page [Triggers]() gives you all the instructions you need to set the most sophisticated trigger events.
+The WiKi page [Triggers]() gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
+![output image]( https://qengineering.eu/images/YoloCamAdGitAdRpi4_2.webp)
+> YoloCam Raspberry Pi 4
+
+------------
+
+## Specs.
 
 ------------
 
