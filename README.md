@@ -80,9 +80,15 @@ It is all very simple and self explanatory.
 ------------
 
 ## Preparations.
-There are a few settings needed before the application will work properly.<br/>
-- First, of course, you need an internet connection. Setup your WiFi or Ethernet as usual.<br/>
-After reboot, you must have video footage in your browser. Just give the Raspberry Pi IP, like the http://192.168.178.32 used in the demo video.
+Now that you have your license key, a few settings are required for YoloCam to work properly.<br/>
+First of all, you need an internet connection. This page explains how to set up the WiFi connection on your Raspberry Pi.
+#### GPIO version
+If you have the GPIO version, no other settings are needed at this point.
+#### email version
+With the email version, you need the following things to do:
+
+
+
 - If you want to receive emails and/or store recordings at Google drive, you will need an Google account. Since all your personal login information can be found in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons. 
 - Register your app with Google to get your email password. See this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification).
 - Get the authorization key from Google for gdrive. Give `$ gdrive about`. See the [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive, it's already on board. You only need the key.
