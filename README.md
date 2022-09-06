@@ -86,12 +86,12 @@ First of all, you need an internet connection. This page explains how to set up 
 If you have the GPIO version, no other settings are needed at this point.
 #### email version
 With the email version, you need the following things to do:
-
-
-
-- If you want to receive emails and/or store recordings at Google drive, you will need an Google account. Since all your personal login information can be found in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons. 
-- Register your app with Google to get your email password. See this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification).
-- Get the authorization key from Google for gdrive. Give `$ gdrive about`. See the [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive, it's already on board. You only need the key.
++ You need a Google account to redirect emails and save recorded clips. Since your personal login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
++ Register your app with Google to get your email password. Follow the instructions on this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
++ To get the authorization key from Google for gdrive, follow the guide on this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
++ Alter the settings to your personal Google account.
++ 
+- 
 - The following action is the settings file. Apart from the threshold, you must provide the internet addresses. See the [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Settings).
 - ***Most important, set the overlay*** active. SD cards wear out when written and can cause your system to crash. Read this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki) carefully to see which solution is best for you.
 
