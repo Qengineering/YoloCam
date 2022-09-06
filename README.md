@@ -63,6 +63,35 @@ Instead of the [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager/im
 
 ------------
 
+## First boot.
+Insert your fresh SD card into the slot and powerup your Raspberry Pi.<br>
+Don't be surprised if the initial boot takes a long time. More than three minutes is normal.<br>
+We have used [PiShrink](https://github.com/Drewsif/PiShrink) to make the image, hence the download time, as small as possible.<br>
+Another advantage of PiShrink is that you can use SD cards with larger sizes than the original 16 GB.<br>
+Because you don't have a license yet, the YoloCam comes with a unique ID to buy the key.<br><br>
+![output image]( https://qengineering.eu/images/YoloCamNoKey.png )<br><br>
+Follow the instructions and visit the [check out](https://qengineering.eu/checkout.php) site.<br><br>
+![output image]( https://qengineering.eu/images/YoloCheckOut.webp )<br><br>
+After a successful payment, you receive an email with the 8-digit key.<br>
+The instructions on how to unlock the app are shown on the [congratulations page](https://qengineering.eu/congratulations.html).<br>
+It is all very simple and self explanatory.
+
+
+------------
+
+## Preparations.
+There are a few settings needed before the application will work properly.<br/>
+- First, of course, you need an internet connection. Setup your WiFi or Ethernet as usual.<br/>
+After reboot, you must have video footage in your browser. Just give the Raspberry Pi IP, like the http://192.168.178.32 used in the demo video.
+- If you want to receive emails and/or store recordings at Google drive, you will need an Google account. Since all your personal login information can be found in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons. 
+- Register your app with Google to get your email password. See this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification).
+- Get the authorization key from Google for gdrive. Give `$ gdrive about`. See the [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive, it's already on board. You only need the key.
+- The following action is the settings file. Apart from the threshold, you must provide the internet addresses. See the [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Settings).
+- ***Most important, set the overlay*** active. SD cards wear out when written and can cause your system to crash. Read this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki) carefully to see which solution is best for you.
+
+
+------------
+
 ## Tip.
 
 We used the cheap RPi camera V1 for € 6,66. It works fine. However, the tiny plug from the embedded sensor to the PCB often can be loose. Somehow the software still supported the camera but didn't receive any video anymore. It took quite a while before we discovered the cause; the connector. Once glued, it now functions perfectly.<br/><br/>
