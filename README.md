@@ -81,20 +81,27 @@ It is all very simple and self explanatory.
 
 ## Preparations.
 Now that you have your license key, a few settings are required for YoloCam to work properly.<br/>
-First of all, you need an internet connection. This page explains how to set up the WiFi connection on your Raspberry Pi.
-#### GPIO version
-If you have the GPIO version, no other settings are needed at this point.
-#### email version
-With the email version, you need the following things to do:
+First of all, you need an internet connection. This page explains how to set up the WiFi connection on your Raspberry Pi.<br><br>
+Only if you have the **email** version, you need the following things to do. The GPIO version need no other settings at this point.
 + You need a Google account to redirect emails and save recorded clips. Since your personal login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
-+ Register your app with Google to get your email password. Follow the instructions on this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
-+ To get the authorization key from Google for gdrive, follow the guide on this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
-+ Alter the settings to your personal Google account.
-+ 
-- 
-- The following action is the settings file. Apart from the threshold, you must provide the internet addresses. See the [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki/Settings).
-- ***Most important, set the overlay*** active. SD cards wear out when written and can cause your system to crash. Read this [WiKi page](https://github.com/Qengineering/RPiMotionCam/wiki) carefully to see which solution is best for you.
++ Register your app with Google to get your email password. Follow the instructions on the WiKi page [Email notification](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
++ To get the authorization key from Google for gdrive, follow the guide on the WiKi page [Gdrive](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
++ Alter the settings to your personal Google account. See for extra information the Wiki page [Settings](https://github.com/Qengineering/DHT22-Raspberry-Pi/wiki/Settings).
+  + `cam_name` Give a name to your YoloCam. Especially useful if you have more than one YoloCam working.
+  + `email` The email address that receives the notifications. Note, `none` will block the mail traffic, but not the recording
+  + `gmail` The gmail address associated with the Google account above.
 
+
+------------
+
+## Triggers.
+The real beauty of YoloCam lies in its ability to generate triggers when objects are detected.<br>
+Each recognized object is tested to see if it should trigger an event.<br>
+The event can set or reset an output pin in the case of the GPIO version.<br>
+Either send you an email, or start a recording if you have the email version.<br>
+Now it is easy to make a video clip of your cat when you are not at home.<br>
+Or a burglar in your backyard, without your dog always setting off the alarm.<br>
+The WiKi page [Triggers]() gives you all the instructions you need to set the most sophisticated trigger events.
 
 ------------
 
