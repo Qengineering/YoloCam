@@ -14,7 +14,7 @@ Installation is simple. Just download the software and flash it to an SD card.<b
 Once inserted into your Raspberry Pi, everything works right away.<br>
 The software comes with the latest Raspberry Pi Bullseye operating system.<br>
 You don't need to be able to program. However, the used C++ source code is available on the image.<br><br>
-Given the many hours of work, we ask you for a small one-time fee for the license.<br>
+Given the many hours of work, we ask you for a small one-time fee for the license (€ 12,50).<br>
 See our [shop](https://qengineering.eu/shop.html) where we explain how the license works.<br><br> 
 ![output image]( https://qengineering.eu/images/YoloCamAdGitScreen.webp )
 > A red box is a recognized moving object. Blue boxes are recognized stationary objects.
@@ -123,16 +123,22 @@ You might also read the Wiki page on recordings.<br>
 
 ## Specs.
 
-OS Rpi 4 and 3B+ : Linux raspberrypi 5.15.61-v8+ #1579 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux
-OS Rpi Zero 2W   : Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux
+OS Rpi 4 and 3B+ : Linux raspberrypi 5.15.61-v8+ #1579 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux<br>
+OS Rpi Zero 2W   : Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux<br><br>
 
-AP : 25.8 %
+AP (Average Precision) : 25.8 %<br>
+Keep in mind that no deep learning model is perfect. Given the limited computing power of the Raspberry PI, we had to make a compromise.<br>
+Our network works amazingly well in everyday use. Even small objects in the background are recognized correctly. Likewise, half-cut objects that are on the edge of the image.<br>
+Yet it sometimes makes mistakes. For example, misinterpret a truck for a car or bus an obvious error.<br><br>
 
-| Model  | email | GPIO | OS bit |
-| ------ | :--:  | :--: | :--: |
-| Raspberry Pi 4 | 3.7 FPS  |  6.3 FPS | 64  |
-| Raspberry Pi 3B+ | 2.5 FPS | 2.52 FPS | 64 |
-| Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS | 32 |
+| Model  | email | GPIO | Zoom 2x | Zoom 4x | Load (Amp) |
+| ------ | :--:  | :--: | :--: | :--: | :--: |
+| Raspberry Pi 4 | 3.7 FPS |  6.3 FPS | 5.5 FPS | 3.7 FPS | 1.1 |
+| Raspberry Pi 3B+ | 2.5 FPS | 2.52 FPS | 2.1 FPS | 1.05 FPS | 1.2 |
+| Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS | 0.72 FPS | 0.4 FPS | 0.6 |
+
+The digital zoom works by cropping the frame and resizing it to the native resolution of 640x480.<br>
+High zooms require high-resolution video streams, which in turn require more computing power to process, leaving less for the deep learning model. Hence the lower frames per second (FPS).
 
 ------------
 
@@ -140,44 +146,4 @@ AP : 25.8 %
 
 We used the cheap RPi camera V1 for € 6,66. It works fine. However, the tiny plug from the embedded sensor to the PCB often can be loose. Somehow the software still supported the camera but didn't receive any video anymore. It took quite a while before we discovered the cause; the connector. Once glued, it now functions perfectly.<br/><br/>
 ![output image]( https://qengineering.eu/images/CheapRPiCam.webp)
-
-------------
-
-## Dependencies.
-To run the application, you have to:
-- A raspberry Pi 4 with a 32 or 64-bit operating system. It can be the Raspberry 64-bit OS, or Ubuntu 18.04 / 20.04. [Install 64-bit OS](https://qengineering.eu/install-raspberry-64-os.html) <br/>
-- The Tencent ncnn framework installed. [Install ncnn](https://qengineering.eu/install-ncnn-on-raspberry-pi-4.html) <br/>
-- OpenCV 64 bit installed. [Install OpenCV 4.5](https://qengineering.eu/install-opencv-4.5-on-raspberry-64-os.html) <br/>
-- Code::Blocks installed. (```$ sudo apt-get install codeblocks```)
-
-------------
-
-## Installing the app.
-To extract and run the network in Code::Blocks <br/>
-$ mkdir *MyDir* <br/>
-$ cd *MyDir* <br/>
-$ wget https://github.com/Qengineering/YoloV4-ncnn-Raspberry-Pi-4/archive/refs/heads/master.zip <br/>
-$ unzip -j master.zip <br/>
-Remove master.zip, LICENSE and README.md as they are no longer needed. <br/> 
-$ rm master.zip <br/>
-$ rm LICENSE <br/>
-$ rm README.md <br/> <br/>
-Your *MyDir* folder must now look like this: <br/> 
-parking.jpg <br/>
-busstop.jpg <br/>
-YoloV4.cpb <br/>
-yoloV4.cpp <br/>
-yolov4-tiny-opt.bin <br/>
-yolov4-tiny-opt.param <br/><br/>
-If you want to run the full YoloV4 version you need: <br/>
-yolov4.bin (download this 245 MB file from [Mega](https://mega.nz/file/Vsg02bJK#2h0QAd8ZUEykb6hi-yOcIAZKXnCBY0mevz8xkHYCmMM))<br/>
-yolov4.param <br/><br/>
-
-------------
-
-## Running the app.
-To run the application load the project file YoloV4.cbp in Code::Blocks. More info or<br/> 
-if you want to connect a camera to the app, follow the instructions at [Hands-On](https://qengineering.eu/deep-learning-examples-on-raspberry-32-64-os.html#HandsOn).<br/><br/>
-
-![output image]( https://qengineering.eu/images/test_busV4.jpg )
 
