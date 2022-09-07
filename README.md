@@ -52,6 +52,9 @@ Select the desired version from the matrix below.
 | Raspberry Pi 3B+ | [image](https://ln5.sync.com/dl/51b691c20/4gb8n8pc-kqdr2529-szkaav4m-nx3jcchm) | soon |
 | Raspberry Pi Zero 2W | [image](https://ln5.sync.com/dl/61432a2d0/ukhr6gne-q9kyvsks-zb45yrmx-mxiu7pdx)  | soon |
 
+username: pi
+password: 3.14
+
 ------------
 
 ## Flashing.
@@ -109,7 +112,7 @@ The WiKi page [Triggers]() gives you all the instructions you need to set the mo
 
 ## Overlay.
 A less-known fact about SD cards is that they only support a limited number of write cycles. Intense writing wears them out, for example, recording video clips. That's why we enabled recordings on an external USB stick. Or on your Google drive. Everything to limit writing to the SD card.<br><br>
-The best way to protect your SD card from wear and tear is to use the overlay feature.<br>
+The best way to protect your SD card from wear and tear is to use the Raspberry Pi overlay feature.<br>
 With the overlay active, no writing to the SD takes place, only to RAM.<br>
 Another advantage of the overlay is the protection of the SD card against sudden power cuts.<br>
 If a power cut happens during a write cycle, it can corrupt the SD card. Worst case scenario, your Raspberry Pi stops functioning.<br>
@@ -119,6 +122,17 @@ You might also read the Wiki page on recordings.<br>
 ------------
 
 ## Specs.
+
+OS Rpi 4 and 3B+ : Linux raspberrypi 5.15.61-v8+ #1579 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux
+OS Rpi Zero 2W   : Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux
+
+AP : 25.8 %
+
+| Model  | email | GPIO | OS bit |
+| ------ | :--:  | :--: | :--: |
+| Raspberry Pi 4 | 3.7 FPS  |  6.3 FPS | 64  |
+| Raspberry Pi 3B+ | 2.5 FPS | 2.52 FPS | 64 |
+| Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS | 32 |
 
 ------------
 
