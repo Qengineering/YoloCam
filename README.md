@@ -102,8 +102,19 @@ Either send you an email, or start a recording if you have the email version.<br
 Now it is easy to make a video clip of your cat when you are not at home.<br>
 Or a burglar in your backyard, without your dog always setting off the alarm.<br>
 The WiKi page [Triggers]() gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
-![output image]( https://qengineering.eu/images/YoloCamAdGitAdRpi4_2.webp)
-> YoloCam Raspberry Pi 4
+![output image]( https://qengineering.eu/images/YoloCamAdGitAdRpi4_4.webp)
+> YoloCam on a Raspberry Pi 4
+
+------------
+
+## Overlay.
+A less-known fact about SD cards is that they only support a limited number of write cycles. Intense writing wears them out, for example, recording video clips. That's why we enabled recordings on an external USB stick. Or on your Google drive. Everything to limit writing to the SD card.<br><br>
+The best way to protect your SD card from wear and tear is to use the overlay feature.<br>
+With the overlay active, no writing to the SD takes place, only to RAM.<br>
+Another advantage of the overlay is the protection of the SD card against sudden power cuts.<br>
+If a power cut happens during a write cycle, it can corrupt the SD card. Worst case scenario, your Raspberry Pi stops functioning.<br>
+All the more reasons to install an overlay. Please follow the instructions on the Wiki page.<br>
+You might also read the Wiki page on recordings.<br>
 
 ------------
 
