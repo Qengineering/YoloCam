@@ -7,7 +7,7 @@
 YoloCam is a software package running on a Raspberry Pi 4, 3 or Zero 2 W.<br>
 It transforms the Rpi into a stand-alone AI-powered camera.<br>
 With a deep learning model, it detects objects in the camera scene.<br><br>
-You can define what YoloCam does when it recognizes an object.<br>
+You can define what actions YoloCam performs when it recognizes an object.<br>
 For instance, send you a mail. Or make a movie and store it at Gdrive. Or activate one of its GPIO pins.<br>
 At the same time, you can view your footage in any browser.<br><br>
 Installation is simple. Just download the software and flash it to an SD card.<br>
@@ -52,8 +52,8 @@ Select the desired version from the matrix below.
 | Raspberry Pi 3B+ | [image](https://ln5.sync.com/dl/51b691c20/4gb8n8pc-kqdr2529-szkaav4m-nx3jcchm) | soon |
 | Raspberry Pi Zero 2W | [image](https://ln5.sync.com/dl/61432a2d0/ukhr6gne-q9kyvsks-zb45yrmx-mxiu7pdx)  | soon |
 
-username: pi
-password: 3.14
+username: **pi**<br>
+password: **3.14**
 
 ------------
 
@@ -69,7 +69,7 @@ Instead of the [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager/im
 ## First boot.
 Insert your fresh SD card into the slot and powerup your Raspberry Pi.<br>
 Don't be surprised if the initial boot takes a long time. More than three minutes is normal.<br>
-We have used [PiShrink](https://github.com/Drewsif/PiShrink) to make the image, hence the download time, as small as possible.<br>
+We have let [PiShrink](https://github.com/Drewsif/PiShrink) compress the image and make the download time as short as possible.<br>
 Another advantage of PiShrink is that you can use SD cards with larger sizes than the original 16 GB.<br>
 Because you don't have a license yet, the YoloCam comes with a unique ID to buy the key.<br><br>
 ![output image]( https://qengineering.eu/images/YoloCamNoKey.png )<br><br>
@@ -98,12 +98,12 @@ Only if you have the **email** version, you need the following things to do. The
 ------------
 
 ## Triggers.
-The real beauty of YoloCam lies in its ability to generate triggers when objects are detected.<br>
+The real beauty of YoloCam lies in its ability to generate triggers when objects are detected.<br><br>
 Each recognized object is tested to see if it should trigger an event.<br>
 The event can set or reset an output pin in the case of the GPIO version.<br>
-Either send you an email, or start a recording if you have the email version.<br>
-Now it is easy to make a video clip of your cat when you are not at home.<br>
-Or a burglar in your backyard, without your dog always setting off the alarm.<br>
+Either send you an email, or start a recording if you have the email version.<br><br>
+Now it's easy to make a video of your dog chewing your slipper when you're not at home.<br>
+Or a burglar in your backyard, without your cat always setting off the alarm.<br><br>
 The WiKi page [Triggers]() gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
 ![output image]( https://qengineering.eu/images/YoloCamAdGitAdRpi4_4.webp)
 > YoloCam on a Raspberry Pi 4
@@ -115,7 +115,7 @@ A less-known fact about SD cards is that they only support a limited number of w
 The best way to protect your SD card from wear and tear is to use the Raspberry Pi overlay feature.<br>
 With the overlay active, no writing to the SD takes place, only to RAM.<br>
 Another advantage of the overlay is the protection of the SD card against sudden power cuts.<br>
-If a power cut happens during a write cycle, it can corrupt the SD card. Worst case scenario, your Raspberry Pi stops functioning.<br>
+If a power cut happens during a write cycle, it can corrupt the SD card. Worst case scenario, your Raspberry Pi stops functioning.<br><br>
 All the more reasons to install an overlay. Please follow the instructions on the Wiki page.<br>
 You might also read the Wiki page on recordings.<br>
 
@@ -123,13 +123,12 @@ You might also read the Wiki page on recordings.<br>
 
 ## Specs.
 
-OS Rpi 4 and 3B+ : Linux raspberrypi 5.15.61-v8+ #1579 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux<br>
-OS Rpi Zero 2W   : Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux<br><br>
+**Rpi 4 and 3B+** OS: Linux raspberrypi 5.15.61-v8+ #1579 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux<br>
+**Rpi Zero 2W** &ensp; OS: Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux<br><br>
 
-AP (Average Precision) : 25.8 %<br>
+**AP (Average Precision) : 25.8 %**<br><br>
 Keep in mind that no deep learning model is perfect. Given the limited computing power of the Raspberry PI, we had to make a compromise.<br>
-Our network works amazingly well in everyday use. Even small objects in the background are recognized correctly. Likewise, half-cut objects that are on the edge of the image.<br>
-Yet it sometimes makes mistakes. For example, misinterpret a truck for a car or bus an obvious error.<br><br>
+Our network works amazingly well in everyday use. Even small objects in the background are recognized correctly. Likewise, half-cut objects that are on the edge of the image. Yet it sometimes makes mistakes. For example, misinterpreting a truck for a car or bus. An understandable error.<br><br>
 
 | Model  | email | GPIO | Zoom 2x | Zoom 4x | Load (Amp) |
 | ------ | :--:  | :--: | :--: | :--: | :--: |
@@ -137,8 +136,9 @@ Yet it sometimes makes mistakes. For example, misinterpret a truck for a car or 
 | Raspberry Pi 3B+ | 2.5 FPS | 2.52 FPS | 2.1 FPS | 1.05 FPS | 1.2 |
 | Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS | 0.72 FPS | 0.4 FPS | 0.6 |
 
-The digital zoom works by cropping the frame and resizing it to the native resolution of 640x480.<br>
-High zooms require high-resolution video streams, which in turn require more computing power to process, leaving less for the deep learning model. Hence the lower frames per second (FPS).
+The GPIO digital zoom works by cropping the frame and resizing it to the native resolution of 640x480.<br>
+High zooms require high-resolution video streams, which in turn require more computing power to process, leaving less for the deep learning model. Hence the lower frames per second (FPS).<br><br>
+**Gdrive video clips: 640x480 @ 15 FPS.**
 
 ------------
 
