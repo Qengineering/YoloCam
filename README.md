@@ -87,9 +87,9 @@ Now that you have your license key, a few settings are required for YoloCam to w
 First of all, you need an internet connection. This page explains how to set up the WiFi connection on your Raspberry Pi.<br><br>
 Only if you have the **email** version, you need the following things to do. The GPIO version need no other settings at this point.
 + You need a Google account to redirect emails and save recorded clips. Since your personal login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
-+ Register your app with Google to get your email password. Follow the instructions on the WiKi page [Email notification](https://github.com/Qengineering/RPiMotionCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
-+ To get the authorization key from Google for gdrive, follow the guide on the WiKi page [Gdrive](https://github.com/Qengineering/RPiMotionCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
-+ Alter the settings to your personal Google account. See for extra information the Wiki page [Settings](https://github.com/Qengineering/DHT22-Raspberry-Pi/wiki/Settings).
++ Register your app with Google to get your email password. Follow the instructions on the Wiki page [Email notification](https://github.com/Qengineering/YoloCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
++ To get the authorization key from Google for gdrive, follow the guide on the Wiki page [Gdrive](https://github.com/Qengineering/YoloCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
++ Alter the settings to your personal Google account. See for extra information the Wiki page [Settings](https://github.com/Qengineering/YoloCam/wiki/Settings#settings).
   + `cam_name` Give a name to your YoloCam. Especially useful if you have more than one YoloCam working.
   + `email` The email address that receives the notifications. Note, `none` will block the mail traffic, but not the recording
   + `gmail` The gmail address associated with the Google account above.
@@ -104,7 +104,7 @@ The event can set or reset an output pin in the case of the GPIO version.<br>
 Either send you an email, or start a recording if you have the email version.<br><br>
 Now it's easy to make a video of your dog chewing your slipper when you're not at home.<br>
 Or a burglar in your backyard, without your cat always setting off the alarm.<br><br>
-The WiKi page [Triggers]() gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
+The Wiki page [Triggers](https://github.com/Qengineering/YoloCam/wiki/Triggers) gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
 ![output image]( https://qengineering.eu/images/YoloCamAdGitAdRpi4_4.webp)
 > YoloCam on a Raspberry Pi 4
 
@@ -116,8 +116,8 @@ The best way to protect your SD card from wear and tear is to use the Raspberry 
 With the overlay active, no writing to the SD takes place, only to RAM.<br>
 Another advantage of the overlay is the protection of the SD card against sudden power cuts.<br>
 If a power cut happens during a write cycle, it can corrupt the SD card. Worst case scenario, your Raspberry Pi stops functioning.<br><br>
-All the more reasons to install an overlay. Please follow the instructions on the Wiki page.<br>
-You might also read the Wiki page on recordings.<br>
+All the more reasons to install an overlay. Please follow the instructions on the [Wiki page](https://github.com/Qengineering/YoloCam/wiki/Overlay).<br>
+You might also read the [Wiki page](https://github.com/Qengineering/YoloCam/wiki/Recording) on recordings.<br>
 
 ------------
 
