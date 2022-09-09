@@ -1,6 +1,6 @@
 # YoloCam
 ![output image]( https://qengineering.eu/images/YoloCamAdGitAd.webp )
-## AI camera with live feed, email notification, Gdrive storage and event triggered GPIO.<br>
+## AI camera with live feed, email notification, Gdrive storage and event-triggered GPIO.<br>
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
 
 ## Introduction.
