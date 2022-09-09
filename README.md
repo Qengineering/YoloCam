@@ -8,7 +8,7 @@ YoloCam is a software package running on a Raspberry Pi 4, 3 or Zero 2 W.<br>
 It transforms the Rpi into a stand-alone AI-powered camera.<br>
 With a deep learning model, it detects objects in the camera scene.<br><br>
 You can define what actions YoloCam performs when it recognizes an object.<br>
-For instance, send you a email. Or make a movie and store it at Gdrive. Or activate one of its GPIO pins.<br>
+For instance, send you an email. Or make a movie and store it at Gdrive. Or activate one of its GPIO pins.<br>
 At the same time, you can view your footage in any browser.<br><br>
 Installation is simple. Just download the software and flash it to an SD card.<br>
 Once inserted into your Raspberry Pi, everything works right away.<br>
