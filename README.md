@@ -84,7 +84,7 @@ It is all very simple and self explanatory.
 
 ## Preparations.
 Now that you have your license key, a few settings are required for YoloCam to work properly.<br/>
-First of all, you need an internet connection. This page explains how to set up the WiFi connection on your Raspberry Pi.<br><br>
+First of all, you need an internet connection. [This page](https://github.com/Qengineering/RPi-image#wifi) explains how to set up the WiFi connection on your Raspberry Pi.<br><br>
 Only if you have the **email** version, you need the following things to do. The GPIO version need no other settings at this point.
 + You need a Google account to redirect emails and save recorded clips. Since your personal login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
 + Register your app with Google to get your email password. Follow the instructions on the Wiki page [Email notification](https://github.com/Qengineering/YoloCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
