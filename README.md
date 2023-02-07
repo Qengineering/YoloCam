@@ -1,6 +1,6 @@
 # YoloCam
 ![output image]( https://qengineering.eu/images/YoloCamAdGitAd.webp )
-## AI camera with live feed, email notification, Gdrive storage and event-triggered GPIO.<br>
+## AI camera with live feed, email notification, Gdrive storage and event-triggered GPIO/URL.<br>
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
 
 ## Introduction.
@@ -132,7 +132,7 @@ Our network works amazingly well in everyday use. Even small objects in the back
 
 | Model  | email | GPIO | Zoom 2x | Zoom 4x | Load (Amp) |
 | ------ | :--:  | :--: | :--: | :--: | :--: |
-| Raspberry Pi 4 | 3.7 FPS |  6.3 FPS | 5.5 FPS | 3.7 FPS | 1.1 |
+| Raspberry Pi 4 | 3.7 FPS |  4.8 FPS | 3.5 FPS | 2.1 FPS | 1.1 |
 | Raspberry Pi 3B+ | 2.5 FPS | 2.52 FPS | 2.1 FPS | 1.05 FPS | 1.2 |
 | Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS | 0.72 FPS | 0.4 FPS | 0.6 |
 
