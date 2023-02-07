@@ -123,7 +123,7 @@ You might also read the [Wiki page](https://github.com/Qengineering/YoloCam/wiki
 
 ## Specs.
 
-**Rpi 4 and 3B+** OS: Linux raspberrypi 5.15.61-v8+ #1579 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux<br>
+**Rpi 4 and 3B+** OS: Linux raspberrypi 5.15.84-v8+ #1613 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux<br>
 **Rpi Zero 2W** &ensp; OS: Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux<br><br>
 
 **AP (Average Precision) : 25.8 %**<br><br>
