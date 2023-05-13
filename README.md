@@ -130,14 +130,12 @@ You might also read the [Wiki page](https://github.com/Qengineering/YoloCam/wiki
 Keep in mind that no deep learning model is perfect. Given the limited computing power of the Raspberry PI, we had to make a compromise.<br>
 Our network works amazingly well in everyday use. Even small objects in the background are recognized correctly. Likewise, half-cut objects that are on the edge of the image. Yet it sometimes makes mistakes. For example, misinterpreting a truck for a car or bus. An understandable error.<br><br>
 
-| Model  | email | GPIO | Zoom 2x | Zoom 4x | Load (Amp) |
-| ------ | :--:  | :--: | :--: | :--: | :--: |
-| Raspberry Pi 4 | 3.7 FPS |  4.8 FPS | 3.5 FPS | 2.1 FPS | 1.1 |
-| Raspberry Pi 3B+ | 2.5 FPS | 2.52 FPS | 2.1 FPS | 1.05 FPS | 1.2 |
-| Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS | 0.72 FPS | 0.4 FPS | 0.6 |
+| Model  | email | GPIO |  Load (Amp) |
+| ------ | :--:  |  :--: | :--: |
+| Raspberry Pi 4 | 3.7 FPS |  4.8 FPS  | 1.1 |
+| Raspberry Pi 3B+ | 2.5 FPS | 2.55 FPS | 1.2 |
+| Raspberry Pi Zero 2W | 2.17 FPS | 0.78 FPS  | 0.6 |
 
-The GPIO digital zoom works by cropping the frame and resizing it to the native resolution of 640x480.<br>
-High zooms require high-resolution video streams, which in turn require more computing power to process, leaving less for the deep learning model. Hence the lower frames per second (FPS).<br><br>
 **Gdrive video clips: 640x480 @ 15 FPS.**
 
 ------------
