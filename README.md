@@ -133,7 +133,7 @@ Our network works amazingly well in everyday use. Even small objects in the back
 | Model  | email | GPIO |  Load (Amp) |
 | ------ | :--:  |  :--: | :--: |
 | Raspberry Pi 4 | 3.7 FPS |  6.0 FPS  | 1.1 |
-| Raspberry Pi 3B+ | 3.15 FPS | 2.55 FPS | 1.2 |
+| Raspberry Pi 3B+ | 2.5 FPS | 3.15 FPS | 1.2 |
 | Raspberry Pi Zero 2W | 2.17 FPS | 0.91 FPS  | 0.6 |
 
 **Gdrive video clips: 640x480 @ 15 FPS.**
