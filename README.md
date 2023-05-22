@@ -32,9 +32,9 @@ To get the YoloCam working, you need the following hardware:
 ## Software.
 There are two versions of the YoloCam software. You have to choose which one you want to use.<br><br>
 The _**GPIO**_ version. This version activates the GPIO output pins when a recognized object triggers an event.<br>
-There is no live feed to your browser. You can only watch the video on your monitor. Or via VNC, of course.<br>
-The GPIO outputs acts in real time. There is no 10-second latency.<br>
-Finally, the GPIO version has a digital zoom of up to 5X.<br><br>
+There is a live feed to your browser.<br>
+The GPIO outputs act in real-time. There is no 10-second latency.<br>
+Finally, the GPIO version has the possibility to trigger URLs.<br><br>
 The _**email**_ version. This version sends emails and records movies when a recognized object triggers an event.<br>
 There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming, because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream. By the way, thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.<br>The email version lacks the digital zoom function.
 #### Tip.<br>
