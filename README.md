@@ -48,7 +48,7 @@ Select the desired version from the matrix below.
 
 | Model  | email | GPIO |
 | ------------- | :-----:  | :-----:  |
-| Raspberry Pi 4 | [image](https://ln5.sync.com/dl/6616dd810/etprcnwj-wyfi8iks-8efefpjx-w3fnwd3v) | [image](https://ln5.sync.com/dl/03b5a5b30/yxec53ji-ase48mfi-tvevtz57-3bjmc2at) |
+| Raspberry Pi 4 | [image](https://ln5.sync.com/dl/38b35f330/sp4pcp3z-pktpgbn5-uku9w245-5gm6zze8) | [image](https://ln5.sync.com/dl/03b5a5b30/yxec53ji-ase48mfi-tvevtz57-3bjmc2at) |
 | Raspberry Pi 3B+ | [image](https://ln5.sync.com/dl/27a595fe0/9wyz2hep-52zrhxgk-neqhy8tz-vesmtu79) | [image](https://ln5.sync.com/dl/6f78f8d50/6ecuvbzr-2ycjt8dm-fipxhywb-6fmbmees) |
 | Raspberry Pi Zero 2W | [image](https://ln5.sync.com/dl/61432a2d0/ukhr6gne-q9kyvsks-zb45yrmx-mxiu7pdx)  | [image](https://ln5.sync.com/dl/9a2112190/qqhqdkvg-bz3kyk5h-g4xpdy4x-ybb739u3) |
 
