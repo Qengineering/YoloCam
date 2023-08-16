@@ -48,9 +48,9 @@ Select the desired version from the matrix below.
 
 | Model  | email | GPIO |
 | ------------- | :-----:  | :-----:  |
-| Raspberry Pi 4 | [image](https://ln5.sync.com/dl/38b35f330/sp4pcp3z-pktpgbn5-uku9w245-5gm6zze8) | [image](https://ln5.sync.com/dl/03b5a5b30/yxec53ji-ase48mfi-tvevtz57-3bjmc2at) |
-| Raspberry Pi 3B+ | [image](https://ln5.sync.com/dl/27a595fe0/9wyz2hep-52zrhxgk-neqhy8tz-vesmtu79) | [image](https://ln5.sync.com/dl/6f78f8d50/6ecuvbzr-2ycjt8dm-fipxhywb-6fmbmees) |
-| Raspberry Pi Zero 2W | [image](https://ln5.sync.com/dl/61432a2d0/ukhr6gne-q9kyvsks-zb45yrmx-mxiu7pdx)  | [image](https://ln5.sync.com/dl/9a2112190/qqhqdkvg-bz3kyk5h-g4xpdy4x-ybb739u3) |
+| Raspberry Pi 4 | [image](https://ln5.sync.com/dl/45158bca0/kscktyzv-ujtn5qs9-2fggujuv-wdetsnir) | [image](https://ln5.sync.com/dl/3edbcedb0/fn7ej3b3-udd5b796-m67wr3j7-zkvyy79z) |
+| Raspberry Pi 3B+ | [image](https://ln5.sync.com/dl/72c7fa370/5ctv3tzd-ndzjtjaf-wvrqetfp-ifbkm8wi) | [image](https://ln5.sync.com/dl/bb0bffb50/96yvfptp-mfwnb7js-ri49dxag-jz8vxua6) |
+| Raspberry Pi Zero 2W | [image](https://ln5.sync.com/dl/517748e20/2jgfera2-cfmn9uz8-nn6tri35-d37qmqvr)  | [image](https://ln5.sync.com/dl/3e995a560/5c9jwu9x-bc72zp4e-rsdcs6gz-iuy6ur2r) |
 
 username: **pi**<br>
 password: **3.14**
@@ -68,9 +68,6 @@ Instead of the [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager/im
 
 ## First boot.
 Insert your fresh SD card into the slot and powerup your Raspberry Pi.<br>
-Don't be surprised if the initial boot takes a long time. More than three minutes is normal.<br>
-We have let [PiShrink](https://github.com/Drewsif/PiShrink) compress the image and make the download time as short as possible.<br>
-Another advantage of PiShrink is that you can use SD cards with larger sizes than the original 16 GB.<br>
 Because you don't have a license yet, the YoloCam comes with a unique ID to buy the key.<br><br>
 ![output image]( https://qengineering.eu/images/YoloCamNoKey.png )<br><br>
 Follow the instructions and visit the [check out](https://qengineering.eu/checkout.php) site.<br><br>
