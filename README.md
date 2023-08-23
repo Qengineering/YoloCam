@@ -21,6 +21,12 @@ See our [shop](https://qengineering.eu/shop.html) where we explain how the licen
 
 ------------
 
+## [YoloIP.](https://github.com/Qengineering/YoloIP)
+You might also be interested in YoloIP. YoloIP works with everyday surveillance cameras connected to a network.
+It can handle up to 8 cameras simultaneously. And, just like YoloCam, events trigger the GPIO and send emails. 
+
+------------
+
 ## Hardware.
 To get the YoloCam working, you need the following hardware:
 - A Raspberry Pi 4, 3B+ or Zero 2W.
