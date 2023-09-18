@@ -145,6 +145,6 @@ Our network works amazingly well in everyday use. Even small objects in the back
 
 ## Tip.
 
-We used the cheap RPi camera V1 for € 6,66. It works fine. However, the tiny plug from the embedded sensor to the PCB often can be loose. Somehow the software still supported the camera but didn't receive any video anymore. It took quite a while before we discovered the cause; the connector. Once glued, it now functions perfectly.<br/><br/>
+We used the cheap RPi camera V1 for € 6,66. However, the tiny plug from the embedded sensor to the PCB can be loose. The software still reports the camera but didn't receive any video. It took quite a while before we discovered the cause: the connector. Once glued, it now functions perfectly.<br/><br/>
 ![output image]( https://qengineering.eu/images/CheapRPiCam.webp)
 
