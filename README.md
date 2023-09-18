@@ -39,7 +39,7 @@ To get the YoloCam working, you need the following hardware:
 There are two versions of the YoloCam software. You have to choose which one you want to use.<br><br>
 The _**GPIO**_ version. This version activates the GPIO output pins when a recognized object triggers an event.<br>
 There is a live feed to your browser.<br>
-The GPIO outputs act in real time. There is no 10-second latency.<br>
+The GPIO outputs act in real-time. There is no 10-second latency.<br>
 Finally, the GPIO version has the possibility to trigger URLs.<br><br>
 The _**email**_ version. This version sends emails and records movies when a recognized object triggers an event.<br>
 There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream. By the way, thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.<br>The email version lacks the digital zoom function.
@@ -73,7 +73,7 @@ Instead of the [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager/im
 ------------
 
 ## First boot.
-Insert your fresh SD card into the slot and powerup your Raspberry Pi.<br>
+Insert your fresh SD card into the slot and power your Raspberry Pi.<br>
 Because you don't have a license yet, the YoloCam comes with a unique ID to buy the key.<br><br>
 ![output image]( https://qengineering.eu/images/YoloCamNoKey.png )<br><br>
 Follow the instructions and visit the [check out](https://qengineering.eu/checkout.php) site.<br><br>
@@ -88,11 +88,11 @@ It is all very simple and self-explanatory.
 ## Preparations.
 Now that you have your license key, a few settings are required for YoloCam to work properly.<br/>
 First of all, you need an internet connection. [This page](https://github.com/Qengineering/RPi-image#wifi) explains how to set up the WiFi connection on your Raspberry Pi.<br><br>
-Only if you have the **email** version you have to follow the next steps. The GPIO version need no other settings at this point.
+Only if you have the **email** version you have to follow the next steps. The GPIO version needs no other settings at this point.
 + You need a Google account to redirect emails and save recorded clips. Since your personal login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
 + Register your app with Google to get your email password. Follow the instructions on the Wiki page [Email notification](https://github.com/Qengineering/YoloCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
 + To get the authorization key from Google for gdrive, follow the guide on the Wiki page [Gdrive](https://github.com/Qengineering/YoloCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
-+ Alter the settings to your personal Google account. See for extra information the Wiki page [Settings](https://github.com/Qengineering/YoloCam/wiki/Settings#settings).
++ Alter the settings to your personal Google account. See for extra information on the Wiki page [Settings](https://github.com/Qengineering/YoloCam/wiki/Settings#settings).
   + `cam_name` Give a name to your YoloCam. Especially useful if you have more than one YoloCam working.
   + `email` The email address that receives the notifications. Note, `none` will block the mail traffic, but not the recording
   + `gmail` The gmail address associated with the Google account above.
@@ -104,7 +104,7 @@ Only if you have the **email** version you have to follow the next steps. The GP
 The real beauty of YoloCam lies in its ability to generate triggers when objects are detected.<br><br>
 Each recognized object is tested to see if it should trigger an event.<br>
 The event can set or reset an output pin in the case of the GPIO version.<br>
-Either send you an email, or start a recording if you have the email version.<br><br>
+Either send you an email or start a recording if you have the email version.<br><br>
 Now it's easy to make a video of your dog chewing your slipper when you're not at home.<br>
 Or a burglar in your backyard, without your cat always setting off the alarm.<br><br>
 The Wiki page [Triggers](https://github.com/Qengineering/YoloCam/wiki/Triggers) gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
@@ -129,9 +129,9 @@ You might also read the [Wiki page](https://github.com/Qengineering/YoloCam/wiki
 **Rpi 4 and 3B+** OS: Linux raspberrypi 5.15.84-v8+ #1613 Debian GNU/Linux 11 (bullseye) aarch64 GNU/Linux<br>
 **Rpi Zero 2W** &ensp; OS: Linux raspberrypi 5.15.56-v7+ #1575 Debian GNU/Linux 11 (bullseye) armv7l GNU/Linux<br><br>
 
-**AP (Average Precision) : 25.8 %**<br><br>
+**AP (Average Precision): 25.8 %**<br><br>
 Keep in mind that no deep learning model is perfect. Given the limited computing power of the Raspberry PI, we had to make a compromise.<br>
-Our network works amazingly well in everyday use. Even small objects in the background are recognized correctly. Likewise, half-cut objects that are on the edge of the image. Yet it sometimes makes mistakes. For example, misinterpreting a truck for a car or bus. An understandable error.<br><br>
+Our network works amazingly well in everyday use. Even small objects in the background are recognized correctly. Likewise, half-cut objects are on the edge of the image. Yet it sometimes makes mistakes. For example, misinterpreting a truck for a car or bus. An understandable error.<br><br>
 
 | Model  | email | GPIO |  Load (Amp) |
 | ------ | :--:  |  :--: | :--: |
