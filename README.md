@@ -35,16 +35,29 @@ To get the YoloCam working, you need the following hardware:
 
 ------------
 
+## Camera.
+YoloCam is suitable for every model RaspiCam. Because the AI model works with small-sized images, large images are automatically resized to a lower resolution. That's why there is no real need for an expensive, high-resolution camera. A cheap model V1 will do just fine.<br><br>
+
+The YoloCam **email** version has a Nginx web server on board. It feeds an HLS live stream. You can watch it in any browser.<br>
+![output image]( https://qengineering.eu/github/YoloBrowser.png )<br>
+#### More FPS?
+Reduce the resolution of the HLS live stream. Default set at 1296x972 @ 15 FPS. See the [Wiki page](https://github.com/Qengineering/YoloCam/wiki/Nginx-installation). 
+#### No 10 Sec time lag?
+The 10-second time lag is inherent to HLS streaming. There is no workaround.<br>
+The only alternative is the GPIO version. This version monitors real-time, with no latency. 
+
+------------
+
 ## Software.
 There are two versions of the YoloCam software. You have to choose which one you want to use.<br><br>
 The _**GPIO**_ version. This version activates the GPIO output pins when a recognized object triggers an event.<br>
 There is a live feed to your browser.<br>
 The GPIO outputs act in real-time. There is no 10-second latency.<br>
-Finally, the GPIO version has the possibility to trigger URLs.<br><br>
+Finally, the GPIO version can trigger URLs.<br><br>
 The _**email**_ version. This version sends emails and records movies when a recognized object triggers an event.<br>
-There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream. By the way, thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.<br>The email version lacks the digital zoom function.
+There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream. Thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.<br>The email version lacks the digital zoom function.
 #### Tip.<br>
-Start with the email version if this is your first time using YoloCam. You get a lot of inside information on how everything works, with a detailed email to help you tune your events. And for the price, you can't beat it.
+Start with the email version if this is your first time using YoloCam. You get a lot of inside information on everything, with a detailed email to help you tune your events. And for the price, you can't beat it.
 ![output image]( https://qengineering.eu/images/EmailExampleYoloCam2.png )
 
 ------------
@@ -64,7 +77,7 @@ password: **3.14**
 ------------
 
 ## Flashing.
-Once the file has been downloaded, you need to flash it to an SD card. Use a good quality SD with a minimum size of 16 GByte for this.<br>
+Once the file has been downloaded, flash it to an SD card. Use a good quality SD with a minimum size of 16 GByte for this.<br>
 On the [Raspberry Pi website](https://www.raspberrypi.com/documentation/computers/getting-started.html), you can follow the instructions on how to flash an image.<br><br>
 Obviously, don't select a standard OS, but the file you just downloaded. For instance' `YoloCam_Rpi4_email.xz`.<br><br>
 ![output image]( https://qengineering.eu/images/FlashShopRpi.webp )<br><br>
@@ -89,7 +102,7 @@ It is all very simple and self-explanatory.
 Now that you have your license key, a few settings are required for YoloCam to work properly.<br/>
 First of all, you need an internet connection. [This page](https://github.com/Qengineering/RPi-image#wifi) explains how to set up the WiFi connection on your Raspberry Pi.<br><br>
 Only if you have the **email** version you have to follow the next steps. The GPIO version needs no other settings at this point.
-+ You need a Google account to redirect emails and save recorded clips. Since your personal login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
++ You need a Google account to redirect emails and save recorded clips. Since your login details are stored in the Raspberry Pi, we recommend a separate Google account for this application. Just for safety reasons.
 + Register your app with Google to get your email password. Follow the instructions on the Wiki page [Email notification](https://github.com/Qengineering/YoloCam/wiki/Email-notification) on how to set email traffic from your Raspberry Pi.
 + To get the authorization key from Google for gdrive, follow the guide on the Wiki page [Gdrive](https://github.com/Qengineering/YoloCam/wiki/Gdrive-installation#authorization-key). You don't have to install gdrive. It's already on board. You only need the key.
 + Alter the settings to your personal Google account. See for extra information on the Wiki page [Settings](https://github.com/Qengineering/YoloCam/wiki/Settings#settings).
