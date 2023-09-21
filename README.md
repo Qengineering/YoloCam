@@ -41,7 +41,7 @@ YoloCam is suitable for every model RaspiCam. Because the AI model works with sm
 The YoloCam **email** version has a Nginx web server on board. It feeds an HLS live stream. You can watch it in any browser.<br>
 ![output image]( https://qengineering.eu/github/YoloBrowser.png )<br>
 #### More FPS?
-Reduce the resolution of the HLS live stream. Default set at 1296x972 @ 15 FPS. See the [Wiki page](https://github.com/Qengineering/YoloCam/wiki/Nginx-installation). 
+Reduce the resolution of the HLS live stream. Default set at 1296x972 @ 15 FPS. See the [Wiki page](https://github.com/Qengineering/YoloCam/wiki/Nginx-installation#more-fps). 
 #### No 10 Sec time lag?
 The 10-second time lag is inherent to HLS streaming. There is no workaround.<br>
 The only alternative is the GPIO version. This version monitors real-time, with no latency. 
