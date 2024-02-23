@@ -36,7 +36,7 @@ To get the YoloCam working, you need the following hardware:
 ------------
 
 ## Camera.
-YoloCam is suitable for every model RaspiCam. Because the AI model works with small-sized images, large images are automatically resized to a lower resolution. That's why there is no real need for an expensive, high-resolution camera. A cheap model V1 will do just fine.<br><br>
+YoloCam is suitable for RaspiCam models V1 and V2. **YoloCam does not support Camera Module 3**.<br>Because the AI model works with small-sized images, large images are automatically resized to a lower resolution. That's why there is no real need for an expensive, high-resolution camera. A cheap model V1 will do just fine.<br><br>
 
 The YoloCam **email** version has a Nginx web server on board. It feeds an HLS live stream. You can watch it in any browser.<br>
 ![output image]( https://qengineering.eu/github/YoloBrowser.png )<br>
