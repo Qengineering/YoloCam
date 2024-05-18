@@ -36,7 +36,10 @@ To get the YoloCam working, you need the following hardware:
 ------------
 
 ## Camera.
-YoloCam is suitable for RaspiCam models V1 and V2. **YoloCam does not support Camera Module 3**.<br>Because the AI model works with small-sized images, large images are automatically resized to a lower resolution. That's why there is no real need for an expensive, high-resolution camera. A cheap model V1 will do just fine.<br><br>
+YoloCam is suitable for RaspiCam models V1 and V2. **YoloCam does not support Camera Module 3**.<br>Because the AI model works with small-sized images, large images are automatically resized to a lower resolution. That's why there is no real need for an expensive, high-resolution camera. A cheap model V1 will do just fine.<br>
+
+### WebCam
+With a small adaption in a script, YoloCam also works with most common webcams. Please read the information on this [Wiki page](https://github.com/Qengineering/YoloCam/wiki/WebCam).<br><br>
 
 The YoloCam **email** version has a Nginx web server on board. It feeds an HLS live stream. You can watch it in any browser.<br>
 ![output image]( https://qengineering.eu/github/YoloBrowser.png )<br>
@@ -52,7 +55,7 @@ The only alternative is the GPIO version. This version monitors real-time, with 
 There are two versions of the YoloCam software. You have to choose which one you want to use.<br><br>
 The _**GPIO**_ version. This version activates the GPIO output pins when a recognized object triggers an event.<br>
 There is a live feed to your browser.<br>
-The GPIO outputs act in real-time. There is no 10-second latency.<br>
+The GPIO outputs act in real time. There is no 10-second latency.<br>
 Finally, the GPIO version can trigger URLs.<br><br>
 The _**email**_ version. This version sends emails and records movies when a recognized object triggers an event.<br>
 There is a live feed to your browser. It has a latency of 10 seconds due to the HLS streaming because it takes some time to collect all the information from the stream, get the individual packets and 'glue' them into one video stream. Thanks to this latency, you will receive your emails 5 seconds before the actual movement is visible in your browser so you can log in.<br>The email version lacks the digital zoom function.
@@ -117,8 +120,8 @@ Only if you have the **email** version you have to follow the next steps. The GP
 The real beauty of YoloCam lies in its ability to generate triggers when objects are detected.<br><br>
 Each recognized object is tested to see if it should trigger an event.<br>
 The event can set or reset an output pin in the case of the GPIO version.<br>
-Either send you an email or start a recording if you have the email version.<br><br>
-Now it's easy to make a video of your dog chewing your slipper when you're not at home.<br>
+Either, send you an email or start a recording if you have the email version.<br><br>
+Now it's easy to make a video of your dog chewing your slipper when you're not home.<br>
 Or a burglar in your backyard, without your cat always setting off the alarm.<br><br>
 The Wiki page [Triggers](https://github.com/Qengineering/YoloCam/wiki/Triggers) gives you all the instructions you need to set the most sophisticated trigger events.<br><br>
 ![output image]( https://qengineering.eu/images/YoloCamAdGitAdRpi4_4.webp)
@@ -127,7 +130,7 @@ The Wiki page [Triggers](https://github.com/Qengineering/YoloCam/wiki/Triggers) 
 ------------
 
 ## Overlay.
-A less-known fact about SD cards is that they only support a limited number of write cycles. Intense writing wears them out, for example, recording video clips. That's why we enabled recordings on an external USB stick. Or on your Google drive. Everything to limit writing to the SD card.<br><br>
+A less-known fact about SD cards is that they only support a limited number of write cycles. Intense writing wears them out, for example, recording video clips. That's why we enabled recordings on an external USB stick. Or on your Google Drive. Everything to limit writing to the SD card.<br><br>
 The best way to protect your SD card from wear and tear is to use the Raspberry Pi overlay feature.<br>
 With the overlay active, no writing to the SD takes place, only to RAM.<br>
 Another advantage of the overlay is the protection of the SD card against sudden power cuts.<br>
